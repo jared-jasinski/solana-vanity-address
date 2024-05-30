@@ -1,3 +1,9 @@
+from solders.keypair import Keypair
+from solders.pubkey import Pubkey
+from solders.system_program import TransferParams, transfer
+from solana.transaction import Transaction
+from solana.rpc.api import Client
+
 def generate_solana_address(suffix_list, num_threads=12):
     from concurrent.futures import ThreadPoolExecutor, as_completed
     
